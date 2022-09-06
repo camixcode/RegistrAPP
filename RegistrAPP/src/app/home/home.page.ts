@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Test } from '../app.component';
+import { Usuario } from '../app.component';
 
 @Component({
   selector: 'app-home',
@@ -9,4 +11,15 @@ export class HomePage {
 
   constructor() {}
 
+
+  mostrar(){
+    let usuario : Usuario;
+    console.log(usuario.nombre);
+
+    
+  
+  }
+
 }
+
+
