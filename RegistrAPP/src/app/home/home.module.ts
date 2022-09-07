@@ -3,8 +3,7 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
-import {MatSliderModule} from '@angular/material/slider';
-import {MatButtonModule} from '@angular/material/button';
+
 import { HomePageRoutingModule } from './home-routing.module';
 
 
@@ -13,9 +12,7 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
-    MatSliderModule,
-    MatButtonModule
+    HomePageRoutingModule
   ],
   declarations: [HomePage]
 })

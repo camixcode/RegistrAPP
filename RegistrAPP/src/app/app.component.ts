@@ -19,13 +19,13 @@ export class Test{
   }
 
 export class Usuario {
-  private id: number;
+  public id: number;
   public nombre: string;
-  private apellido: string;
-  private nombreUsuario: string;
-  private nivelEducacion: string;
-  private fechaNacimiento: string;
-  private password: string;
+  public apellido: string;
+  public nombreUsuario: string;
+  public nivelEducacion: string;
+  public fechaNacimiento: string;
+  public password: string;
 
   constructor(id: number,
      nombre: string,
