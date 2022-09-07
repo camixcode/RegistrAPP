@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-title><h4>Registro de asistencia</h4> </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <mat-card class="demo-inline-calendar-card">
+    <mat-calendar [(selected)]="selected"></mat-calendar>
+  </mat-card>
+  <p>Selected date: {{selected}}</p>
+</ion-content>
