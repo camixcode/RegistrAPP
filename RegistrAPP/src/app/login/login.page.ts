@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Usuario } from '../app.component';
 
 
 @Component({
@@ -9,16 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class LoginPage implements OnInit {
 
-  usuario={
-    id:"1",
-    nombreUsuario:"",
-    password:"",
-    nombre:"",
-    apellido:"",
-    nivelEducacion:"",
-    fechaNacimiento:""
-
-  }
+  usuario = new Usuario(1,"","","","","","")
 
   mostrarDatos(){
     console.log(this.usuario.nombreUsuario)

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AlertController } from '@ionic/angular';
+import { Usuario } from '../app.component';
 
 
 @Component({
@@ -10,24 +11,21 @@ import { AlertController } from '@ionic/angular';
 })
 export class HomePage {
 
+ 
+
   constructor(
     private alertController: AlertController,
     private activatedRoute: ActivatedRoute
     ) {}
     
 
-  usuario={
-    id:"",
-    nombreUsuario:"",
-    password:"",
-    nombre:"",
-    apellido:"",
-    nivelEducacion:"",
-    fechaNacimiento:""
-  }
+    usuario = new Usuario(1,"","","","","","")
+
 
   async presentAlert() {
+
     if(this.usuario.nombre.length<=0){
+      
       const alert = await this.alertController.create({
         subHeader: 'Usuario',
         message: 'Error campos invalidos',
