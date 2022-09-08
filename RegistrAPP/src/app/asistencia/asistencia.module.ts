@@ -8,12 +8,18 @@ import { AsistenciaPageRoutingModule } from './asistencia-routing.module';
 
 import { AsistenciaPage } from './asistencia.page';
 
+import {MatSliderModule} from '@angular/material/slider'
+
+import {MatDatepickerModule} from '@angular/material/datepicker';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AsistenciaPageRoutingModule
+    AsistenciaPageRoutingModule,
+    MatSliderModule,
+    MatDatepickerModule
   ],
   declarations: [AsistenciaPage]
 })
