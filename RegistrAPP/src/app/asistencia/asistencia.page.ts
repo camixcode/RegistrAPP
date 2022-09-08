@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormGroup, FormControl} from '@angular/forms';
 
+
 const today = new Date();
 const month = today.getMonth();
 const year = today.getFullYear();
@@ -23,7 +24,10 @@ export class DatepickerInlineCalendarExample {
   selected: Date | null;
 }
 
-
+export class AppComponent{
+  title: "navbar"
+  opened = false;
+}
 
 export class DateRangePickerComparisonExample {
   campaignOne = new FormGroup({

@@ -12,6 +12,18 @@ import {MatSliderModule} from '@angular/material/slider'
 
 import {MatDatepickerModule} from '@angular/material/datepicker';
 
+
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatMenuModule} from '@angular/material/menu';
+
+
+
+
+
 @NgModule({
   imports: [
     CommonModule,
@@ -19,7 +31,13 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     IonicModule,
     AsistenciaPageRoutingModule,
     MatSliderModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatListModule,
+    MatMenuModule
   ],
   declarations: [AsistenciaPage]
 })
