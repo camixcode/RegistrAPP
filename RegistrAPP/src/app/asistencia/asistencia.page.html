@@ -20,7 +20,7 @@
   <mat-sidenav [(opened)]= "opened" mode="side"> 
     <mat-list role="list">
       <mat-list-item>
-        <a mat-flat-button routerLink="login"><mat-icon>other_houses</mat-icon> </a>
+        <a mat-flat-button routerLink="./home.page"><mat-icon>other_houses</mat-icon> </a>
       </mat-list-item>
       <mat-list-item>
         <a mat-flat-button routerLink="./home.page"><mat-icon>co_present</mat-icon> </a>
@@ -42,20 +42,16 @@
 </button>
 <mat-menu #menu="matMenu">
   <button mat-menu-item>
-    <mat-icon>other_houses</mat-icon>
-    <span>Home</span>
+    <a mat-flat-button routerLink="login"><mat-icon>other_houses</mat-icon>Login</a>
   </button>
-  <button mat-menu-item disabled>
-    <mat-icon>co_present</mat-icon>
-    <span>Perfil</span>
-  </button>
-  <button mat-menu-item>
-    <mat-icon>event_available</mat-icon>
-    <span>Asistencia</span>
+  <button mat-menu-item >
+    <a routerLink="login"> <mat-icon>co_present</mat-icon></a>
+    <span>Check voice mail</span>
+    <a routerLink="login"></a>
   </button>
   <button mat-menu-item>
-    <mat-icon>power_rounded</mat-icon>
-    <span>Cerrar sesion</span>
+    <mat-icon>notifications_off</mat-icon>
+    <span>Disable alerts</span>
   </button>
 </mat-menu>
 
